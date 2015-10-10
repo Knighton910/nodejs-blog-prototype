@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1=title
+  ul.errors
+    if errors
+      each error, i in errors
+        li.alert.alert-danger #{error.msg}
+  form(method='post', action='/posts/add', entype='multipart/form-data');
+    .form-group
+      label Title:
+      input.form-control(name='title', type='text')
+    .form-group
+      label Category
+      select.form-control(name='body', id='body')
+    .form-group
+      label Main Image:
+      input.form-control(name='mainimage', type='file')
+    .form-group
+      label Author:
+      select.form-control(name='author')
+        option(value='kel kni') Kel kni
+        option(value='kel knighton') kel knighton
+    input.btn.btn-default(name='submit',type='submit',value='Save')
