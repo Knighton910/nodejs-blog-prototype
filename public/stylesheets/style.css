@@ -49,7 +49,7 @@ nav{
 	height:40px;
 	padding:20px 0 0 10px;
 	font-size:18px;
-	margin-bottom: 20px;
+	margin-bottom:20px;
 }
 
 nav li{
@@ -89,7 +89,7 @@ a.more{
 }
 
 .post img{
-	width: 100%;
+	width:100%;
 }
 
 input, select, textarea{
@@ -101,7 +101,7 @@ label{
 	width:180px;
 }
 
-input[type='text'], select, textarea{
+input[type='text'],input[type='email'], select, textarea{
 	padding:3px;
 	height:20px;
 	width:200px;
@@ -144,8 +144,23 @@ ul.success li{
 }
 
 footer{
-	margin-top: 40px;
+	margin-top:40px;
 	text-align: center;
-	height: 30px;
-	border-top: 1px solid #ccc;
+	height:30px;
+	border-top:1px solid #ccc;
+}
+
+.comment-form{
+	margin:30px 0;
+}
+
+.comment{
+	background:#ccc;
+	padding:5px;
+	border:#666 solid 1px;
+	margin:15px 0 20px;
+}
+
+.comment-name{
+	font-weight: bold;
 }
